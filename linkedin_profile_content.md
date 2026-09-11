@@ -1,4 +1,4 @@
-# LinkedIn Profile Content — copy/paste reference
+# LinkedIn Profile Content - copy/paste reference
 
 Drafted to match the portfolio CV's voice and metrics. LinkedIn field limits noted
 so nothing gets cut off when you paste.
@@ -10,7 +10,7 @@ so nothing gets cut off when you paste.
 ```
 AI & Data Engineer | LLM & RAG Systems, Multi-Agent Platforms, MLOps | Python · FastAPI · SQL · Docker
 ```
-(104 characters — plenty of room if you want to add "Open to opportunities" at the end.)
+(104 characters - plenty of room if you want to add "Open to opportunities" at the end.)
 
 ---
 
@@ -57,10 +57,30 @@ Email: ing.khaledlakhdher@gmail.com
 ## Experience #1
 
 **Title:** AI Engineer
-**Company:** CTT — Carthage Training & Technologies
-**Dates:** Feb 2026 – Present
-**Location:** Tunisia
-**Note:** Started as a final-year project (PFE); converted to a full-time contract after graduation. On LinkedIn, check "I currently work here" so it shows as ongoing.
+**Company:** CTT - Carthage Training & Technologies
+**Dates:** Aug 2026 - Present
+**Location:** Hammamet, Tunisia
+**Note:** Converted to a full-time contract after the end-of-studies internship on the same project. On LinkedIn, check "I currently work here" so it shows as ongoing.
+
+```
+Continuing full-time on Hotel Mind, the multilingual multi-agent hotel search
+and booking assistant built during my end-of-studies internship.
+
+• Shipping new features on the live assistant.
+• Migrating the platform's data layer onto Nextcloud.
+
+Stack: LangChain, LangGraph, Multi-Agent, FastAPI, Next.js
+```
+
+---
+
+## Experience #1b
+
+**Title:** Artificial Intelligence Developer Intern (End-of-Studies Project)
+**Company:** CTT - Carthage Training & Technologies
+**Dates:** Feb 2026 - Jul 2026
+**Location:** Hammamet, Tunisia
+**Note:** This was the final-year graduation project (PFE).
 
 ```
 Designed and built Hotel Mind, a multilingual, multi-agent hotel search and
@@ -81,8 +101,8 @@ Stack: LangChain, LangGraph, Multi-Agent, FastAPI, Next.js, SOAP
 ## Experience #2
 
 **Title:** Artificial Intelligence Developer Intern
-**Company:** CTT — Carthage Training & Technologies
-**Dates:** Jul 2025 – Sep 2025
+**Company:** CTT - Carthage Training & Technologies
+**Dates:** Jul 2025 - Sep 2025
 **Location:** Hammamet, Tunisia
 
 ```
@@ -103,7 +123,7 @@ Stack: NLP, Hugging Face, Django, Python
 Add these as LinkedIn "Projects" entries (Profile → Add section → Projects).
 Link the GitHub repo where you have one public.
 
-**1. Nexus AI — Artificial Intelligence Employee Management Platform**
+**1. Nexus AI - Artificial Intelligence Employee Management Platform**
 ```
 A multi-tenant platform where LLM agents are governed like employees: scoped
 IAM-style permissions enforced at the tool-execution boundary, hierarchical
@@ -115,7 +135,7 @@ Stack: FastAPI, PostgreSQL/pgvector, Redis Streams, Next.js, TypeScript
 GitHub: https://github.com/KhaledLakhdher/startup
 ```
 
-**2. Steam Player Forecaster — Production MLOps Pipeline**
+**2. Steam Player Forecaster - Production MLOps Pipeline**
 ```
 A production MLOps pipeline forecasting Steam player counts: a reproducible ML
 lifecycle (scikit-learn, MLflow, FastAPI, Pandera, Docker) with time-based
@@ -128,7 +148,7 @@ Stack: MLOps, MLflow, FastAPI, scikit-learn, Docker, GitHub Actions, Streamlit
 GitHub: https://github.com/KhaledLakhdher/steam-player-mlops
 ```
 
-**3. CodeReview Evaluation — Benchmarked LLM Code Reviewer**
+**3. CodeReview Evaluation - Benchmarked LLM Code Reviewer**
 ```
 An AI code-review pipeline (Claude API, structured JSON findings) with a
 reproducible evaluation harness over the BugsInPy benchmark (500 real Python
@@ -141,7 +161,7 @@ Stack: LLM-as-a-Judge, Benchmarking, Claude API, Evaluation, Streamlit, Python
 GitHub: https://github.com/KhaledLakhdher/coder_review
 ```
 
-**4. Hotel Mind — Multi-Agent Travel Assistant**
+**4. Hotel Mind - Multi-Agent Travel Assistant**
 ```
 A multilingual, multi-agent hotel search and booking assistant grounded
 entirely in live SOAP data: 9 LangChain/LangGraph agents, 32+ tools, 10 real
@@ -160,7 +180,7 @@ voice cloning via CSM-1B, cutting response time by 30%.
 Stack: ASR, TTS, Voice Cloning, Fine-tuning
 ```
 
-**6. DecisionFlow — AI Business Analyst**
+**6. DecisionFlow - AI Business Analyst**
 ```
 Upload a spreadsheet, get a data warehouse: cleaning, a star schema,
 forecasts, and an analyst you can ask questions. Engineered a multi-tenant
@@ -182,7 +202,7 @@ GitHub: https://github.com/KhaledLakhdher/DecisionFlow
 
 ## Skills to add (search: Profile → Add skill)
 
-Add these in order of priority — recruiters and LinkedIn's search both index this list:
+Add these in order of priority - recruiters and LinkedIn's search both index this list:
 
 ```
 RAG (Retrieval-Augmented Generation)
@@ -212,9 +232,9 @@ MLOps
 ## Certifications (Profile → Add section → Licenses & certifications)
 
 ```
-1. Fundamentals of Deep Learning — NVIDIA — Nov 2022
-2. Building Transformer-Based Natural Language Processing Applications — NVIDIA — Dec 2025
-3. Applications of AI for Predictive Maintenance — NVIDIA — Oct 2025
+1. Building Transformer-Based Natural Language Processing Applications - NVIDIA - Dec 2025
+2. Fundamentals of Deep Learning - NVIDIA - Nov 2025
+3. Applications of AI for Predictive Maintenance - NVIDIA - Oct 2025
 ```
 
 ---
@@ -222,13 +242,13 @@ MLOps
 ## Education
 
 ```
-EPI — International Polytechnic School, Sousse, Tunisia
-Computer Engineering — AI & Data Science Specialization
-2023 – 2026
+EPI - International Polytechnic School, Sousse, Tunisia
+Computer Engineering - AI & Data Science Specialization
+2023 - 2026
 
-EPI — Private International Polytechnic School, Sousse, Tunisia
+EPI - Private International Polytechnic School, Sousse, Tunisia
 Preparatory Cycle
-2021 – 2023
+2021 - 2023
 ```
 
 ---

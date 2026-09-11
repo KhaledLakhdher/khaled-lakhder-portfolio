@@ -5,10 +5,11 @@
 %==============================================================
 \documentclass[11pt,a4paper]{article}
 
+\usepackage{cmap}                    % correct ToUnicode mapping so PDF text extraction/ATS parsing isn't garbled
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{charter}                 % serif font close to the original
-\usepackage[margin=1.15cm,top=0.8cm,bottom=0.7cm]{geometry}
+\usepackage[margin=1.1cm,top=0.7cm,bottom=0.6cm]{geometry}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{titlesec}
 \usepackage{enumitem}
@@ -32,7 +33,7 @@
 
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
-\linespread{0.88}
+\linespread{0.86}
 
 % ---------- Line-breaking: avoid ugly mid-word / hyphen splits ----------
 \exhyphenpenalty=10000          % never break at existing hyphens (e.g. LLM-as-a-Judge)
@@ -53,23 +54,29 @@
   {\LARGE\bfseries\color{accent} Khaled Lakhdher}\\[3pt]
   {\large\color{muted} Computer Engineer \;|\; AI \& Data Science \;|\; Full-Stack AI Developer}\\[5pt]
   {\small\color{muted}
-    {\color{accent}\faMapMarker}~Sousse, Tunisia \quad
-    {\color{accent}\faEnvelope}~\href{mailto:ing.khaledlakhdher@gmail.com}{ing.khaledlakhdher@gmail.com} \quad
-    {\color{accent}\faPhone}~+216 29 843 899 \quad
+    {\color{accent}\faMapMarker}~Sousse, Tunisia \quad\textbar\quad
+    {\color{accent}\faEnvelope}~\href{mailto:ing.khaledlakhdher@gmail.com}{ing.khaledlakhdher@gmail.com} \quad\textbar\quad
+    {\color{accent}\faPhone}~+216 29 843 899 \quad\textbar\quad
     {\color{accent}\faLinkedin}~\href{https://www.linkedin.com/in/khaled-lakhdher}{in/khaled-lakhdher}
   }\\[3pt]
-  {\small {\color{accent}\faGlobe}~\href{https://khaled-lakhdher-portfolio.vercel.app}{\textbf{\color{accent}khaled-lakhdher-portfolio.vercel.app}}}
+  {\small {\color{accent}\faGlobe}~\href{https://khaled-lakhdher-portfolio.vercel.app}{\textbf{\color{accent}khaled-lakhdher-portfolio.vercel.app}} \quad\textbar\quad {\color{accent}\faGithub}~\href{https://github.com/KhaledLakhdher}{\textbf{\color{accent}github.com/KhaledLakhdher}}}
 \end{center}
 
 % ---------- Profile ----------
 \section{Profile}
-AI and data engineer who turns models and data into dependable products. I build LLM and RAG systems,
-multi-agent platforms, and end-to-end ML pipelines, with a metrics-first focus on data quality,
+I'm an AI and data engineer who turns models and data into dependable products. I build LLM and RAG
+systems, multi-agent platforms, and end-to-end ML pipelines, with a metrics-first focus on data quality,
 evaluation, and clean deployment. Comfortable across the stack: Python, SQL, FastAPI, and Docker.
 
 % ---------- Experience ----------
 \section{Experience}
-\entry{AI Engineer}{Feb 2026 - Present \textperiodcentered\ Tunisia}
+\entry{AI Engineer}{August 2026 - Present \textperiodcentered\ Hammamet}
+\org{CTT - Carthage Training \& Technologies}
+\begin{itemize}
+  \item Continued on \textbf{Hotel Mind} full-time after the end-of-studies internship, shipping new features and migrating the platform's data layer onto Nextcloud.
+\end{itemize}
+\vspace{3pt}
+\entry{Artificial Intelligence Developer Intern (End-of-Studies Project)}{February 2026 - July 2026 \textperiodcentered\ Hammamet}
 \org{CTT - Carthage Training \& Technologies}
 \begin{itemize}
   \item Designed and developed \textbf{Hotel Mind}, a multilingual, multi-agent hotel search and booking assistant: 9 LangChain/LangGraph agents call 32+ tools across 10 real SOAP endpoints for live hotel, room, and pricing data.
@@ -89,16 +96,17 @@ evaluation, and clean deployment. Comfortable across the stack: Python, SQL, Fas
 
 \proj{Nexus AI - Artificial Intelligence Employee Management Platform}
 \begin{itemize}
-  \item Engineered a multi-tenant platform (FastAPI, PostgreSQL/pgvector, Redis, Next.js) governing LLM agents
-        with IAM permissions, vector memory, multi-agent orchestration over a Redis message bus, and
-        real-time WebSocket monitoring, behind a provider-agnostic model gateway (Anthropic, OpenRouter, Gemini).
+  \item Built a multi-tenant platform where LLM agents are governed like employees: scoped IAM-style
+        permissions, hierarchical vector memory, multi-agent orchestration with real-time WebSocket
+        monitoring, and a provider-agnostic model gateway (Anthropic, OpenRouter, Gemini) running agents for
+        a fraction of a cent per run. Stack: FastAPI, PostgreSQL/pgvector, Redis, Next.js.
 \end{itemize}
 
 \proj{DecisionFlow - AI Business Analyst (Multi-Tenant SaaS)}
 \begin{itemize}
-  \item Built a multi-tenant analytics SaaS (FastAPI, PostgreSQL/RLS, DuckDB, Polars, Next.js) turning an
-        uploaded CSV into a star schema, dashboard, forecast, and natural-language Q\&A, with LLM-generated
-        SQL sandboxed across 3 layers and tenant isolation enforced in-database.
+  \item Turned an uploaded CSV into a data warehouse: automated cleaning, a star schema, forecasting, and
+        natural-language Q\&A, built on a multi-tenant SaaS (FastAPI, PostgreSQL/RLS, DuckDB, Polars,
+        Next.js) with LLM-generated SQL sandboxed across 3 layers and tenant isolation enforced in-database.
 \end{itemize}
 
 \proj{CodeReview Evaluation - Benchmarked LLM Code Reviewer}
@@ -111,35 +119,39 @@ evaluation, and clean deployment. Comfortable across the stack: Python, SQL, Fas
 % ---------- Certifications ----------
 \section{Certifications}
 \begin{itemize}
-  \item Fundamentals of Deep Learning - NVIDIA {\color{muted}(Nov 22, 2022)}
   \item Building Transformer-Based Natural Language Processing Applications - NVIDIA {\color{muted}(Dec 19, 2025)}
+  \item Fundamentals of Deep Learning - NVIDIA {\color{muted}(Nov 22, 2025)}
   \item Applications of AI for Predictive Maintenance - NVIDIA {\color{muted}(Oct 27, 2025)}
 \end{itemize}
 
 % ---------- Skills ----------
 \section{Skills}
-\textbf{\color{accent}Programming Languages:} Python \textperiodcentered\ Java \textperiodcentered\ C \textperiodcentered\ SQL \textperiodcentered\ JavaScript \textperiodcentered\ TypeScript\par
+\textbf{\color{accent}Programming Languages:} Python \textperiodcentered\ SQL \textperiodcentered\ TypeScript \textperiodcentered\ JavaScript \textperiodcentered\ Java \textperiodcentered\ C\par
 \smallskip
-\textbf{\color{accent}Frontend Technologies:} React.js \textperiodcentered\ React Native \textperiodcentered\ HTML/CSS \textperiodcentered\ Tailwind CSS\par
+\textbf{\color{accent}AI \& LLM Engineering:} PyTorch \textperiodcentered\ TensorFlow \textperiodcentered\ Transformers \textperiodcentered\ Hugging Face \textperiodcentered\ scikit-learn \textperiodcentered\ LangChain \textperiodcentered\ LangGraph\par
 \smallskip
-\textbf{\color{accent}AI Libraries \& Frameworks:} Transformers \textperiodcentered\ PyTorch \textperiodcentered\ TensorFlow \textperiodcentered\ Keras \textperiodcentered\ Hugging Face \textperiodcentered\ scikit-learn \textperiodcentered\ Pandas \textperiodcentered\ NumPy \textperiodcentered\ Matplotlib\par
+\textbf{\color{accent}Backend \& Data:} FastAPI \textperiodcentered\ Django \textperiodcentered\ Flask \textperiodcentered\ PostgreSQL \textperiodcentered\ Pandas \textperiodcentered\ NumPy\par
 \smallskip
-\textbf{\color{accent}Development Frameworks \& Tools:} Gradio \textperiodcentered\ Streamlit \textperiodcentered\ Flask \textperiodcentered\ Django \textperiodcentered\ Zeep \textperiodcentered\ LangSmith \textperiodcentered\ Docker \textperiodcentered\ Postman \textperiodcentered\ Git \textperiodcentered\ GitHub\par
+\textbf{\color{accent}Frontend, Cloud \& Tools:} Next.js \textperiodcentered\ React.js \textperiodcentered\ Tailwind CSS \textperiodcentered\ Docker \textperiodcentered\ AWS \textperiodcentered\ Git \textperiodcentered\ GitHub \textperiodcentered\ Power BI \textperiodcentered\ Streamlit \textperiodcentered\ Postman\par
 \smallskip
-\textbf{\color{accent}Concepts \& Technologies:} Artificial Intelligence (AI) \textperiodcentered\ Machine Learning (ML) \textperiodcentered\ Deep Learning (DL) \textperiodcentered\ Large Language Models (LLMs) \textperiodcentered\ RAG (Retrieval-Augmented Generation) \textperiodcentered\ AI Agents \textperiodcentered\ Agentic AI \textperiodcentered\ Tool Calling \textperiodcentered\ LLM Evaluation \textperiodcentered\ Natural Language Processing (NLP) \textperiodcentered\ Automatic Speech Recognition (ASR) \textperiodcentered\ GANs \textperiodcentered\ Semantic Search \textperiodcentered\ NoSQL Databases \textperiodcentered\ Cloud Computing\par
+\textbf{\color{accent}Concepts \& Methods:} Large Language Models (LLMs) \textperiodcentered\ RAG (Retrieval-Augmented Generation) \textperiodcentered\ AI Agents \textperiodcentered\ Agentic AI \textperiodcentered\ Multi-Agent Systems \textperiodcentered\ Natural Language Processing (NLP) \textperiodcentered\ Machine Learning (ML) \textperiodcentered\ Deep Learning (DL) \textperiodcentered\ Agile/Scrum\par
 
-% ---------- Education ----------
-\section{Education}
-\entry{Computer Engineering - AI \& Data Science Specialization}{2023 - 2026}
-\org{EPI - International Polytechnic School \textperiodcentered\ Sousse, Tunisia}
-\vspace{3pt}
+% ---------- Education + Languages (side by side) ----------
+\noindent
+\begin{minipage}[t]{0.72\textwidth}
+  \section{Education}
+  \entry{Computer Engineering - AI \& Data Science Specialization}{2023 - 2026}
+  \org{EPI - International Polytechnic School \textperiodcentered\ Sousse, Tunisia}
+  \vspace{3pt}
 
-\entry{Preparatory Cycle}{2021 - 2023}
-\org{EPI - Private International Polytechnic School \textperiodcentered\ Sousse, Tunisia}
-
-% ---------- Languages ----------
-\section{Languages}
-\textbf{\color{accent}French:} DELF B2 \qquad
-\textbf{\color{accent}English:} TOEIC (Listening \& Reading) - 825/990
+  \entry{Preparatory Cycle}{2021 - 2023}
+  \org{EPI - Private International Polytechnic School \textperiodcentered\ Sousse, Tunisia}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.25\textwidth}
+  \section{Languages}
+  \textbf{\color{accent}French:} DELF B2\par\vspace{3.5pt}
+  \textbf{\color{accent}English:} TOEIC 825/990\par\vspace{3.5pt}
+  \textbf{\color{accent}Arabic:} Native\par
+\end{minipage}
 
 \end{document}

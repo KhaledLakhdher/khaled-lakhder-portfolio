@@ -13,10 +13,7 @@ export default function Contact() {
             <div className="pointer-events-none absolute -bottom-20 -left-10 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
 
             <div className="relative">
-              <span className="eyebrow text-white/70">
-                <span className="h-px w-6 bg-white/60" />
-                Contact
-              </span>
+              <span className="eyebrow text-white/70">Contact</span>
               <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-extrabold tracking-tight sm:text-4xl">
                 Let's build something intelligent together.
               </h2>

@@ -9,13 +9,16 @@ type Msg = { role: 'user' | 'assistant'; content: string }
 
 const KNOWLEDGE_TEXT = `
 ## Profile
-Khaled Lakhdher is a Computer Engineer, AI & Data Science, Full-Stack AI Developer based in Sousse, Tunisia. AI and data engineer who turns models and data into dependable products. He builds LLM and RAG systems, multi-agent platforms, and end-to-end ML pipelines, with a metrics-first focus on data quality, evaluation, and clean deployment. Comfortable across the stack: Python, SQL, FastAPI, and Docker. Contact: ing.khaledlakhdher@gmail.com, LinkedIn https://www.linkedin.com/in/khaled-lakhdher.
+Khaled Lakhdher is a Computer Engineer, AI & Data Science, Full-Stack AI Developer based in Sousse, Tunisia. He is an AI and data engineer who turns models and data into dependable products, building LLM and RAG systems, multi-agent platforms, and end-to-end ML pipelines, with a metrics-first focus on data quality, evaluation, and clean deployment. Comfortable across the stack: Python, SQL, FastAPI, and Docker. Contact: ing.khaledlakhdher@gmail.com, LinkedIn https://www.linkedin.com/in/khaled-lakhdher.
 
 ## Experience - AI Engineer
-AI Engineer at CTT - Carthage Training & Technologies (Feb 2026 - Present, Tunisia). Started on this role as a final-year project (PFE) and continued as a full-time AI Engineer under contract after graduation. Designed and developed Hotel Mind, a multilingual, multi-agent hotel search and booking assistant: 9 LangChain/LangGraph agents call 32+ tools across 10 real SOAP endpoints for live hotel, room, and pricing data. Grounded every answer in live tool output rather than model memory, and built a hybrid booking flow (AI search, a guest-detail form, and a sandboxed SOAP reservation) on a full-stack FastAPI + Next.js app with LangSmith tracing. Technologies: LangChain, LangGraph, Multi-Agent, SOAP APIs, FastAPI, Next.js.
+AI Engineer at CTT - Carthage Training & Technologies (August 2026 - Present, Hammamet, Tunisia). Continued full-time under contract on Hotel Mind after completing the end-of-studies internship on the same project, shipping new features and migrating the platform's data layer onto Nextcloud. Technologies: LangChain, LangGraph, Multi-Agent, FastAPI, Next.js.
 
-## Experience - AI Developer Intern
-AI Developer Intern at CTT - Carthage Training & Technologies (Jul 2025 - Sep 2025, Hammamet, Tunisia). Fine-tuned a Hugging Face NLP model to classify customer reviews into three sentiment classes (positive, negative, neutral), improving accuracy by 25% over the pre-trained baseline. Built a Django backend to manage customer data and automate export of analysis results to Excel for reporting. Owned the end-to-end Python pipeline for preprocessing, training, and integration. Technologies: NLP, Hugging Face, Django, Python.
+## Experience - AI Developer Intern (End-of-Studies Project)
+Artificial Intelligence Developer Intern (End-of-Studies Project) at CTT - Carthage Training & Technologies (February 2026 - July 2026, Hammamet, Tunisia). This was the final-year graduation project (PFE). Designed and developed Hotel Mind, a multilingual, multi-agent hotel search and booking assistant: 9 LangChain/LangGraph agents call 32+ tools across 10 real SOAP endpoints for live hotel, room, and pricing data. Grounded every answer in live tool output, not model memory, via a hybrid flow (AI search, a guest-detail form, a sandboxed SOAP reservation) on a full-stack FastAPI + Next.js app with LangSmith tracing. Technologies: LangChain, LangGraph, Multi-Agent, SOAP APIs, FastAPI, Next.js.
+
+## Experience - Artificial Intelligence Developer Intern
+Artificial Intelligence Developer Intern at CTT - Carthage Training & Technologies (July 2025 - September 2025, Hammamet, Tunisia). Fine-tuned a Hugging Face NLP model to classify customer reviews into three sentiment classes, improving accuracy by 25% over the baseline. Built a Django backend to manage customer data and automate export of analysis results to Excel for reporting. Owned the end-to-end Python pipeline for preprocessing, training, and integration. Technologies: NLP, Hugging Face, Django, Python.
 
 ## Project - Nexus AI - Artificial Intelligence Employee Management Platform
 A multi-tenant platform where LLM agents are governed like employees - scoped permissions, vector memory, orchestration, and per-agent cost tracking. Engineered a multi-tenant full-stack platform (FastAPI, PostgreSQL/pgvector, Redis, Next.js, TypeScript) where LLM agents are governed like employees: scoped IAM-style permissions enforced at the tool-execution boundary, hierarchical vector memory with semantic recall, and a provider-agnostic model gateway (Anthropic / OpenRouter-Gemini) with per-agent cost tracking. Engineered a multi-agent orchestration engine over a Redis Streams message bus with real-time WebSocket monitoring and an append-only audit log, running live agents for a fraction of a cent per run. Stack: FastAPI, pgvector, Redis Streams, Next.js, Multi-Agent, WebSockets. GitHub: https://github.com/KhaledLakhdher/startup.
@@ -36,19 +39,22 @@ A personalized voice assistant combining speech-to-text, text-to-speech, and rea
 Upload a spreadsheet, get a data warehouse: cleaning, a star schema, forecasts, and an analyst you can ask questions. Engineered a multi-tenant analytics platform (FastAPI, PostgreSQL, DuckDB, Polars, Redis, Next.js, TypeScript) carrying an uploaded CSV through a raw to clean to star pipeline, with tenant isolation enforced by PostgreSQL row-level security rather than application checks. Engineered the analytics layer: foreign keys inferred from value containment, Holt-Winters forecasting, MAD anomaly detection, and RFM churn scoring, fronted by a Gemini narrative layer whose generated SQL clears a three-layer sandbox and refuses rather than guesses when the data cannot support an answer. Stack: FastAPI, DuckDB, PostgreSQL, RLS, Polars, Gemini, scikit-learn, Next.js, Playwright. GitHub: https://github.com/KhaledLakhdher/DecisionFlow.
 
 ## Skills - Programming Languages
-Programming Languages: Python, Java, C, SQL, JavaScript, TypeScript, React.js, React Native, HTML/CSS, Tailwind CSS.
+Programming Languages: Python, SQL, TypeScript, JavaScript, Java, C.
 
-## Skills - AI Libraries & Frameworks
-AI Libraries & Frameworks: Transformers, PyTorch, TensorFlow, Keras, Hugging Face, scikit-learn, Pandas, NumPy, Matplotlib.
+## Skills - AI & LLM Engineering
+AI & LLM Engineering: PyTorch, TensorFlow, Transformers, Hugging Face, scikit-learn, LangChain, LangGraph.
 
-## Skills - Frameworks & Tools
-Frameworks & Tools: Gradio, Streamlit, Flask, Django, Zeep, LangSmith, Docker Compose, Postman, Git, GitHub.
+## Skills - Backend & Data
+Backend & Data: FastAPI, Django, Flask, PostgreSQL, Pandas, NumPy.
 
-## Skills - Concepts & Technologies
-Concepts & Technologies: RAG, Retrieval-Augmented Generation, AI Agents, Agentic AI, Tool-Calling, Prompt Engineering, LLM Evaluation, LLM-as-a-Judge, LLMs, NLP, ASR, GANs, Semantic Search, Embeddings, Deep Learning, NoSQL, Cloud Computing.
+## Skills - Frontend, Cloud & Tools
+Frontend, Cloud & Tools: Next.js, React.js, Tailwind CSS, Docker, AWS, Git, GitHub, Power BI, Streamlit, Postman.
+
+## Skills - Concepts & Methods
+Concepts & Methods: Large Language Models (LLMs), RAG (Retrieval-Augmented Generation), AI Agents, Agentic AI, Multi-Agent Systems, Natural Language Processing (NLP), Machine Learning (ML), Deep Learning (DL), Agile/Scrum.
 
 ## Certifications
-Fundamentals of Deep Learning (NVIDIA, Nov 2022); Building Transformer-Based NLP Applications (NVIDIA, Dec 2025); Applications of AI for Predictive Maintenance (NVIDIA, Oct 2025); CCNA 1: Introduction to Networks (Cisco Networking Academy, Mar 2024); CCNA 2: Switching, Routing & Wireless Essentials (Cisco Networking Academy, Mar 2024).
+Building Transformer-Based NLP Applications (NVIDIA, Dec 2025); Fundamentals of Deep Learning (NVIDIA, Nov 2025); Applications of AI for Predictive Maintenance (NVIDIA, Oct 2025); CCNA 1: Introduction to Networks (Cisco Networking Academy, Mar 2024); CCNA 2: Switching, Routing & Wireless Essentials (Cisco Networking Academy, Mar 2024).
 
 ## Education
 Computer Engineering - AI & Data Science at EPI - International Polytechnic School (2023 - 2026, Sousse, Tunisia); Preparatory Cycle at EPI - Private International Polytechnic School (2021 - 2023, Sousse, Tunisia).

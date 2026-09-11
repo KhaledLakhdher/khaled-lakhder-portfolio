@@ -4,7 +4,7 @@ export const profile = {
   tagline:
     'I build grounded conversational AI, RAG systems, and applied deep-learning products - from model to full-stack deployment.',
   summary:
-    'AI and data engineer who turns models and data into dependable products. I build LLM and RAG systems, multi-agent platforms, and end-to-end ML pipelines, with a metrics-first focus on data quality, evaluation, and clean deployment. Comfortable across the stack: Python, SQL, FastAPI, and Docker.',
+    "I'm an AI and data engineer who turns models and data into dependable products. I build LLM and RAG systems, multi-agent platforms, and end-to-end ML pipelines, with a metrics-first focus on data quality, evaluation, and clean deployment. Comfortable across the stack: Python, SQL, FastAPI, and Docker.",
   location: 'Sousse, Tunisia',
   email: 'ing.khaledlakhdher@gmail.com',
   phone: '+216 29 843 899',
@@ -29,21 +29,31 @@ export const experiences: Experience[] = [
   {
     role: 'AI Engineer',
     company: 'CTT - Carthage Training & Technologies',
-    period: 'Feb 2026 - Present',
-    location: 'Tunisia',
+    period: 'August 2026 - Present',
+    location: 'Hammamet, Tunisia',
+    bullets: [
+      "Continued on Hotel Mind full-time after the end-of-studies internship, shipping new features and migrating the platform's data layer onto Nextcloud.",
+    ],
+    tags: ['LangChain', 'LangGraph', 'Multi-Agent', 'FastAPI', 'Next.js'],
+  },
+  {
+    role: 'Artificial Intelligence Developer Intern (End-of-Studies Project)',
+    company: 'CTT - Carthage Training & Technologies',
+    period: 'February 2026 - July 2026',
+    location: 'Hammamet, Tunisia',
     bullets: [
       'Designed and developed Hotel Mind, a multilingual, multi-agent hotel search and booking assistant: 9 LangChain/LangGraph agents call 32+ tools across 10 real SOAP endpoints for live hotel, room, and pricing data.',
-      'Grounded every answer in live tool output rather than model memory, and built a hybrid booking flow (AI search, a guest-detail form, and a sandboxed SOAP reservation) on a full-stack FastAPI + Next.js app with LangSmith tracing.',
+      'Grounded every answer in live tool output, not model memory, via a hybrid flow (AI search, a guest-detail form, a sandboxed SOAP reservation) on a full-stack FastAPI + Next.js app with LangSmith tracing.',
     ],
     tags: ['LangChain', 'LangGraph', 'Multi-Agent', 'SOAP APIs', 'FastAPI', 'Next.js'],
   },
   {
-    role: 'AI Developer Intern',
+    role: 'Artificial Intelligence Developer Intern',
     company: 'CTT - Carthage Training & Technologies',
-    period: 'Jul 2025 - Sep 2025',
+    period: 'July 2025 - September 2025',
     location: 'Hammamet, Tunisia',
     bullets: [
-      'Fine-tuned a Hugging Face NLP model to classify customer reviews into three sentiment classes (positive, negative, neutral), improving accuracy by 25% over the pre-trained baseline.',
+      'Fine-tuned a Hugging Face NLP model to classify customer reviews into three sentiment classes, improving accuracy by 25% over the baseline.',
       'Built a Django backend to manage customer data and automate export of analysis results to Excel for reporting.',
       'Owned the end-to-end Python pipeline for preprocessing, training, and integration.',
     ],
@@ -143,36 +153,32 @@ export type SkillGroup = { label: string; items: string[] }
 export const skills: SkillGroup[] = [
   {
     label: 'Programming Languages',
-    items: ['Python', 'Java', 'C', 'SQL', 'JavaScript', 'TypeScript', 'React.js', 'React Native', 'HTML/CSS', 'Tailwind CSS'],
+    items: ['Python', 'SQL', 'TypeScript', 'JavaScript', 'Java', 'C'],
   },
   {
-    label: 'AI Libraries & Frameworks',
-    items: ['Transformers', 'PyTorch', 'TensorFlow', 'Keras', 'Hugging Face', 'scikit-learn', 'Pandas', 'NumPy', 'Matplotlib'],
+    label: 'AI & LLM Engineering',
+    items: ['PyTorch', 'TensorFlow', 'Transformers', 'Hugging Face', 'scikit-learn', 'LangChain', 'LangGraph'],
   },
   {
-    label: 'Frameworks & Tools',
-    items: ['Gradio', 'Streamlit', 'Flask', 'Django', 'Zeep', 'LangSmith', 'Docker Compose', 'Postman', 'Git', 'GitHub'],
+    label: 'Backend & Data',
+    items: ['FastAPI', 'Django', 'Flask', 'PostgreSQL', 'Pandas', 'NumPy'],
   },
   {
-    label: 'Concepts & Technologies',
+    label: 'Frontend, Cloud & Tools',
+    items: ['Next.js', 'React.js', 'Tailwind CSS', 'Docker', 'AWS', 'Git', 'GitHub', 'Power BI', 'Streamlit', 'Postman'],
+  },
+  {
+    label: 'Concepts & Methods',
     items: [
-      'RAG',
-      'Retrieval-Augmented Generation',
+      'Large Language Models (LLMs)',
+      'RAG (Retrieval-Augmented Generation)',
       'AI Agents',
       'Agentic AI',
-      'Tool-Calling',
-      'Prompt Engineering',
-      'LLM Evaluation',
-      'LLM-as-a-Judge',
-      'LLMs',
-      'NLP',
-      'ASR',
-      'GANs',
-      'Semantic Search',
-      'Embeddings',
-      'Deep Learning',
-      'NoSQL',
-      'Cloud Computing',
+      'Multi-Agent Systems',
+      'Natural Language Processing (NLP)',
+      'Machine Learning (ML)',
+      'Deep Learning (DL)',
+      'Agile/Scrum',
     ],
   },
 ]
@@ -180,8 +186,8 @@ export const skills: SkillGroup[] = [
 export type Certification = { name: string; issuer: string; date: string }
 
 export const certifications: Certification[] = [
-  { name: 'Fundamentals of Deep Learning', issuer: 'NVIDIA', date: 'Nov 2022' },
   { name: 'Building Transformer-Based NLP Applications', issuer: 'NVIDIA', date: 'Dec 2025' },
+  { name: 'Fundamentals of Deep Learning', issuer: 'NVIDIA', date: 'Nov 2025' },
   { name: 'Applications of AI for Predictive Maintenance', issuer: 'NVIDIA', date: 'Oct 2025' },
   { name: 'CCNA 1: Introduction to Networks', issuer: 'Cisco Networking Academy', date: 'Mar 2024' },
   { name: 'CCNA 2: Switching, Routing & Wireless Essentials', issuer: 'Cisco Networking Academy', date: 'Mar 2024' },

@@ -12,14 +12,14 @@ export default function Skills() {
           description="From model training to containerized deployment."
         />
 
-        <div className="mt-8 grid gap-4 md:grid-cols-2">
+        <div className="card mt-8 divide-y divide-line overflow-hidden">
           {skills.map((group, i) => (
-            <Reveal key={group.label} delay={i * 0.06}>
-              <div className="card h-full p-6">
-                <h3 className="text-sm font-semibold uppercase tracking-wider text-navy">
+            <Reveal key={group.label} delay={i * 0.05}>
+              <div className="grid gap-3 px-5 py-5 sm:grid-cols-[13rem_1fr] sm:gap-8 sm:px-7 sm:py-6">
+                <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-navy sm:pt-1.5">
                   {group.label}
                 </h3>
-                <div className="mt-4 flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2">
                   {group.items.map((item) => (
                     <span
                       key={item}
